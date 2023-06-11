@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainMenu">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Apa yang kamu cari?"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/montserratbold"
+        android:paddingLeft="25dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:id="@+id/ygkmcari" />
+
+    <EditText
+        android:id="@+id/edt_search"
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ygkmcari"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape"
+        android:drawableLeft="@drawable/ic_search"
+        android:drawablePadding="15dp"
+        android:padding="18dp"
+        android:elevation="5dp"
+        android:fontFamily="@font/robotomedium"
+        android:hint="Pencarian"
+        android:layout_marginLeft="25dp"/>
+
+    <ImageView
+        android:layout_width="394dp"
+        android:layout_height="189dp"
+        android:layout_marginTop="3dp"
+        android:paddingRight="38dp"
+        android:src="@drawable/ppt"
+        android:layout_below="@+id/edt_search"
+        android:layout_marginLeft="25dp"
+        android:id="@+id/promo"/>
+
+    <LinearLayout
+        android:layout_width="363dp"
+        android:layout_height="103dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_below="@+id/promo"
+        android:layout_marginLeft="13dp"
+        android:id="@+id/options">
+
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:src="@drawable/frame7"/>
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:src="@drawable/frame_6"
+            android:layout_marginStart="6dp"/>
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:src="@drawable/frame5"
+            android:layout_marginStart="6dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/trending"
+        android:layout_marginLeft="25dp"
+        android:layout_below="@+id/options"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/montserratbold"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="Sedang trending"
+        android:textColor="@color/black"
+        android:textSize="14sp"/>
+
+    <LinearLayout
+        android:layout_width="364dp"
+        android:layout_height="155dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_below="@+id/trending"
+        android:layout_marginLeft="13dp"
+        android:id="@+id/trending2">
+
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="155dp"
+            android:src="@drawable/sushi"/>
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="155dp"
+            android:src="@drawable/sushi"
+            android:layout_marginStart="6dp"/>
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="155dp"
+            android:src="@drawable/sushi"
+            android:layout_marginStart="6dp"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/trending2"
+        android:layout_marginTop="4dp"
+        android:gravity="center_horizontal"
+        android:src="@drawable/navbar" />
+
+</RelativeLayout>

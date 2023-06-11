@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="73dp"
+        android:id="@+id/R_button1"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/R_button1"
+        android:text="Let you in"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/robotobold"
+        android:textSize="48sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="60dp"
+        android:id="@+id/R_txt_2"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/R_txt_2"
+        android:orientation="vertical"
+        android:padding="38dp"
+        android:id="@+id/layout1">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/shape"
+            android:layout_marginTop="6dp"
+            android:hint="Your Full Name"
+            android:paddingLeft="10dp"
+            android:id="@+id/edt_fullname"
+            android:fontFamily="@font/robotomedium"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/shape"
+            android:layout_marginTop="15dp"
+            android:hint="Your Email"
+            android:paddingLeft="10dp"
+            android:id="@+id/edt_email"
+            android:fontFamily="@font/robotomedium"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/shape"
+            android:layout_marginTop="15dp"
+            android:hint="Create Your Password"
+            android:paddingLeft="10dp"
+            android:id="@+id/edt_pw"
+            android:fontFamily="@font/robotomedium"
+            android:inputType="textPassword"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/shape"
+            android:layout_marginTop="15dp"
+            android:hint="Confirm Your Password"
+            android:paddingLeft="10dp"
+            android:id="@+id/edt_confirmpw"
+            android:fontFamily="@font/robotomedium"
+            android:inputType="textPassword"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:layout_below="@+id/layout1"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#FAA466"
+        android:width="312dp"
+        android:height="60dp"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:id="@+id/signupbtn"
+        android:fontFamily="@font/robotomedium"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/signupbtn"
+        android:gravity="center"
+        android:layout_marginTop="15dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have an account?"
+            android:textSize="14dp"
+            android:fontFamily="@font/robotomedium"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign In"
+            android:textSize="14dp"
+            android:fontFamily="@font/robotobold"
+            android:textColor="#FAA466"
+            android:id="@+id/daftarbtn"/>
+    </LinearLayout>
+
+</RelativeLayout>
